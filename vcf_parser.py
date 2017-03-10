@@ -12,7 +12,7 @@ def vcf_parser(file_location):
         with open('table.txt', 'w') as w:
 
             # write header for 'table.txt'
-            w.write('Chrom\tPosition\tReference\tAlternate\tAnnotation\tSeq_Depth\tVariant_Supporting_Reads\t%_of_Variant_Supporting_Reads\tAllele_Frequency\tAffected_Gene\n')
+            w.write('Chr\tPosition\tRef\tAlt\tAnnotation\tSeqDepth\tVSReads\tPVSReads\tAFrequency\tAGene\n')
 
             # parse through vcf file
             for line in f:
