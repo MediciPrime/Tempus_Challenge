@@ -29,4 +29,4 @@ The table contains the following columns:
    - Ensure that *vcf_parser.py* is executable
    - Run `python vcf_parser.py <insert vcf file location>`
    
-3. The script will output a table *table.txt* in TSV form
+3. The script will output *table.txt* in TSV form
