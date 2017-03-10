@@ -1,4 +1,4 @@
-Chrom	Position	Reference	Alternate	Annotation	Seq_Depth	Variant_Supporting_Reads	%_of_Variant_Supporting_Reads	Allele_Frequency	Affected_Gene
+Chr	Position	Ref	Alt	Annotation	SeqDepth	VSReads	PVSReads	AFrequency	AGene
 1	931393	G	T	snp	4124	4124	1.0	NA	NA
 1	935222	C	A	snp	1134	481	0.425044	0.6611108268522309	ENSG00000188290
 1	1277533	T	C	snp	786	786	1.0	0.997571146075144	ENSG00000107404
