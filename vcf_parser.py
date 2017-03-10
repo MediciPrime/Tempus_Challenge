@@ -2,7 +2,7 @@ import re
 import requests
 import argparse
 
-
+# function containing all the VCF parsing steps
 def vcf_parser(file_location):
 
     # open and parse vcf file
