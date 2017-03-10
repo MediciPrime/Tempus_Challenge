@@ -20,7 +20,7 @@ The table contains the following columns:
 
 1. There are two ways to ensure the script will function properly:
    - Install [Miniconda](http://conda.pydata.org/miniconda.html)
-       - Use setup *Tempus* environment w/ the following code:
+       - Setup *Tempus* environment w/ the following code:
        - `conda env create -f environment.yml`
    - Install python3 and install the [requests](http://docs.python-requests.org/en/master/user/install/) package
        - `pip install requests`
