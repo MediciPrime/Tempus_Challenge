@@ -1,0 +1,23 @@
+name: tempus
+channels:
+- bioconda
+- conda-forge
+- defaults
+- r
+dependencies:
+- ca-certificates=2017.1.23=0
+- certifi=2017.1.23=py36_0
+- ncurses=5.9=10
+- openssl=1.0.2h=3
+- pip=9.0.1=py36_0
+- python=3.6.0=2
+- readline=6.2=0
+- requests=2.13.0=py36_0
+- setuptools=33.1.0=py36_0
+- sqlite=3.13.0=1
+- tk=8.5.19=1
+- wheel=0.29.0=py36_0
+- xz=5.2.2=0
+- zlib=1.2.11=0
+prefix: /home/behram/miniconda3/envs/tempus
+
