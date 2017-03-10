@@ -1,6 +1,6 @@
 # VCF Parser
 
-This script parses a VCF file and outputs a tab-separated values (TSV) in table form.  
+This script parses a VCF file and outputs a table in tab-separated values (TSV) form.  
 The table contains the following columns:  
 
 |Key | Description|
