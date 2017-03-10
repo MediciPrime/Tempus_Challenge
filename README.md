@@ -3,6 +3,8 @@
 This script parses a VCF file and outputs a tab-separated values (TSV) in table form.  
 The table contains the following columns:  
 
+|Key | Description|
+|----|------------|
 |Chr | Chromosome variant is locationed on|
 |Position | Variants' location on the chromosome|
 |Ref | Reference Allele|
