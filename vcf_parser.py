@@ -27,10 +27,11 @@ def vcf_parser(file_location):
                     # collect chrom, position, ref, alt
                     chrom = uInfo[0]
                     pos = uInfo[1]
-                    ref = uInfo[3]
-                    alt = uInfo[4]
+                    ref = uInfo[3].rsplit(',')[0]
+                    alt = uInfo[4].rsplit(',')[0]
                     
-                    # obtain correct information w/ try except blocks
+                    # obtain appropriate information w/ try except blocks
+                    # set AB to the allele balance 
                     try:
                         AB = float(re.search('AB=0(\.\d+)?|1\.0', uInfo[7]).group(0).rsplit('=')[1])
                     except Exception:
@@ -42,7 +43,7 @@ def vcf_parser(file_location):
                         DP = 'NA'
                     
                     try:
-                        TYPE = re.search('TYPE=[a-z]+', uInfo[7]).group(0).rsplit('=')[1]
+                        TYPE = re.search('TYPE=[a-z]+', uInfo[7]).group(0).rsplit('=')[1].rsplit(',')[0]
                     except Exception:
                         TYPE = 'NA'
 
