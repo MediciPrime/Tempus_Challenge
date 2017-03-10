@@ -26,6 +26,8 @@ The table contains the following columns:
    - Install [Miniconda](http://conda.pydata.org/miniconda.html)
        - Once installed, setup *Tempus* environment w/ the following code:
        - `conda env create -f environment.yml`
+       - Activate *tempus* environment
+         - `source activate tempus`
    - Install python3 and install the [requests](http://docs.python-requests.org/en/master/user/install/) package
        - `pip install requests`
    
