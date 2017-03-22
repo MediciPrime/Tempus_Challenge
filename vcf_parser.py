@@ -32,7 +32,7 @@ def vcf_parser(file_location):
                     
                     # obtain the left most alternative allele type
                     try:
-                        TYPE = re.search('TYPE=[a-z]+', uInfo[7]).group(0).rsplit('=')[1]
+                        TYPE = re.search('TYPE=[a-z]+', uInfo[7]).group(0).rsplit('=')[1].rsplit(',')[0]
                     except Exception:
                         TYPE = 'NA'
                         
