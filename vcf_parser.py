@@ -1,6 +1,7 @@
 import re
 import requests
 import argparse
+import subprocess
 
 # function containing all the VCF parsing steps
 def vcf_parser(file_location):
@@ -86,6 +87,9 @@ def vcf_parser(file_location):
                     # insert parsed information into 'table.txt'
                     w.write('{0}\t{1}\t{2}\t{3}\t{4}\t{5}\t{6}\t{7}%\t{8}\t{9}\n'.format(
                         chrom, pos, ref, alt, TYPE, TRD, VSR, PVSR, allele_freq, affected_gene))
+
+            # implement SnpEff Annotations
+            subprocess.call(['snpEff', '-Xmx10G', '-t', '-v', 'GRCh37.75', 'table.txt', '>', 'table.tsv'])
 
 
 # Allow users to specify the location of VCF file
